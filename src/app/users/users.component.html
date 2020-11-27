@@ -1,0 +1,13 @@
+<h1>Lista de Usuarios</h1>
+<table *ngIf="responseUser.data" >
+    <thead>
+        <td>Nome</td>
+        <td>Sobrenome</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of responseUser.data" >
+            <td>{{ user.first_name }}</td>
+            <td>{{ user.last_name }}</td>
+        </tr>
+    </tbody>
+</table>

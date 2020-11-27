@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Cadastre um Novo Usuario</h2>
+</div>
+<!---->
+<div class="container">
+    <div class="formGrop">
+        <label for="nome">Nome:</label>
+        <input type="text" [(ngModel)]="request.name">
+    </div>
+    <div class="formGrop">
+        <label for="job">Trabalho:</label>
+        <input type="text" [(ngModel)]="request.job">
+    </div>
+    <div class="formGrop">
+        <button (click)="save()" >Gravar</button>
+    </div>
+</div>
+<div class="container" *ngIf="response" >
+    <h2>Usuario Cadastrado</h2>
+    <p>Nome: {{ response.name }}</p>
+    <p>Trabalho: {{ response.job }}</p>
+    <p>Id: {{ response.id }}</p>
+    <p>Data: {{ response.createAt }}</p>
+</div>

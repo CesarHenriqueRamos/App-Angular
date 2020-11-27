@@ -1,0 +1,13 @@
+table{
+    width: 100%;
+}
+table thead{
+    background-color: rgb(56, 56, 241);
+    color: white;
+}
+table thead td{
+    border-radius: 10px;
+}
+td{
+    padding: 5px;
+}

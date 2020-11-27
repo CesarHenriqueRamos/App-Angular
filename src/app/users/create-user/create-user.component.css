@@ -1,0 +1,25 @@
+h2{
+    text-align: center;
+}
+.formGrop{
+    margin-top: 15px;
+    width: 600px;
+    margin: 0 auto;
+
+}
+.formGrop label{
+    width: 100%;
+}
+.formGrop input{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.formGrop button{
+    padding: 10px 20px;
+    background-color: rgb(12, 146, 12);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
