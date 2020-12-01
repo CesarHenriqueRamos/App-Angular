@@ -3,11 +3,13 @@
     <thead>
         <td>Nome</td>
         <td>Sobrenome</td>
+        <td></td>
     </thead>
     <tbody>
         <tr *ngFor="let user of responseUser.data" >
             <td>{{ user.first_name }}</td>
             <td>{{ user.last_name }}</td>
+            <td><li><a routerLink="/user/update/{{user.id}}">Atualizar User</a></li></td>
         </tr>
     </tbody>
 </table>

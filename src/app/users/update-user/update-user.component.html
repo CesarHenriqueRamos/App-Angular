@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Atualizar Usuario</h2>
+</div>
+<!---->
+<div class="container">
+    <div class="formGrop">
+        <label for="nome">Nome:</label>
+        <input type="text" [(ngModel)]="request.name">
+    </div>
+    <div class="formGrop">
+        <label for="job">Trabalho:</label>
+        <input type="text" [(ngModel)]="request.job">
+    </div>
+    <div class="formGrop">
+        <button (click)="update()" >Gravar</button>
+    </div>
+</div>
